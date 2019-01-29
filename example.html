@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--head-->
+	<title>{query}的Whois信息</title>
+	<!--/head-->
+	<style type="text/css">
+	</style>
+</head>
+
+<body>
+<center>
+
+<p>
+&copy; 1999 - 2011 <a href="http://www.easydns.com/">easyDNS
+Technologies Inc.</a> &amp; <a href="http://mark.jeftovic.net/">Mark Jeftovic</a><br/>
+Now maintained and hosted by David Saez at <a href="http://www.ols.es">OLS 20000</a><br/>
+Placed under the GPL. See the LICENSE file in the distribution.
+</p>
+
+<table>
+<tr><td bgcolor="#55aaff">
+<form method="get" action="{self}">
+
+<table>
+<tr><td colspan="3" align="center">
+<b>Enter any domain name, ip address or AS handle you would like to query whois for</b>
+<br/><br/>
+<input name="query" value="{query}" /> <input type="submit" value="Whois" /><br/>
+</td></tr>
+
+<tr>
+<td>
+<input type="radio" name="output" value="normal" /> Show me regular output<br/>
+<input type="radio" name="output" value="nice" checked="checked" /> Show me HTMLized output<br/>
+<input type="radio" name="output" value="object" /> Show me the returned PHP object
+</td>
+
+<td align="left" valign="top">
+<input type="checkbox" name="fast" value="1" /> Fast lookup
+</td>
+
+<td align="right" valign="bottom">
+<a href="http://www.phpwhois.org" title="phpWhois web page">
+<img border="0" src="whois.icon.png" alt="phpWhois web page" /></a>
+</td>
+</tr>
+
+</table>
+</form>
+</td></tr>
+</table>
+</center>
+
+<!--results-->
+<p><b>Results for {query} :</b></p>
+<blockquote>
+{result}
+</blockquote>
+<!--/results-->
+
+</body>
+</html>
